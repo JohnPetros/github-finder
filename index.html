@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Github Finder</title>
+  </head>
+  <body>
+    <h1>Encontre seu perfil do Github</h1>
+    <main>
+      <div class="profile-card">
+        <div class="profile">
+          <div class="username">
+            <i class="fa-brands fa-github"></i>
+            <h3 id="username" class="lazy-loading"></h3>
+          </div>
+          <div class="avatar lazy-loading">
+            <img
+              id="avatar"
+              src="https://github.com/JohnPetros.png"
+              alt="Avatar de usuário"
+            />
+          </div>
+
+          <div id="info" class="info">
+            <ul>
+              <li class="info-data lazy-loading">
+                <i class="fa-solid fa-users"></i>
+                <span id="followers"></span>
+                seguidores
+              </li>
+              <li class="info-data lazy-loading">
+                <i class="fa-solid fa-users"></i>
+                <span id="following"></span>
+                seguindo
+              </li>
+              <li class="info-data lazy-loading">
+                <i class="fa-solid fa-book"></i>
+                <span id="public-repos"></span>
+                repositórios
+              </li>
+              <li class="info-data lazy-loading">
+                <i class="fa-regular fa-building"></i>
+                <span id="company"></span>
+              </li>
+              <li class="info-data lazy-loading">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="location"></span>
+              </li>
+            </ul>
+          </div>
+          <a id="profile-link" class="profile-link" target="_blank" href="#"
+            ><i class="fa-regular fa-user"></i> Ver perfil completo</a
+          >
+        </div>
+      </div>
+      <div class="controls">
+        <div class="input-container">
+          <input
+            type="text"
+            id="search"
+            class="input"
+            autofocus
+            placeholder="Coloque seu nome usuário"
+          />
+          <button>Pesquisar</button>
+        </div>
+        <div id="repos" class="repos"></div>
+        <div id="pagination" class="pagination">
+          <!-- <div class="pageNumber active">1</div>
+          <div class="page-number">2</div>
+          <div class="pageNumber">3</div>
+          <div class="pageNumber">4</div>
+          <div class="pageNumber">5</div> -->
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/583fd2bd34.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

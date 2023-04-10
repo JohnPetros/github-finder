@@ -11,8 +11,8 @@ const userProfileLink = document.querySelector("#profile-link");
 const info = document.querySelector("#info");
 const reposContainer = document.querySelector("#repos");
 const pagination = document.querySelector("#pagination");
-const API_TOKEN =
-  "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";
+const CLIENT_ID = "00846d991c108086334f";
+const CLIENT_SECRET = "70790f0f99edc910a3b36767dbc9d18ccbd0e4de";
 
 const displayReposData = (pageNumber, repos) => {
   reposContainer.innerHTML = "";
@@ -130,16 +130,12 @@ const searchUser = async (username) => {
 
   try {
     const [responseProfileData, responseReposData] = await Promise.all([
-      fetch(`https://api.github.com/users/${username}`, {
-        headers: {
-          Authorization: `token ${API_TOKEN}`,
-        },
-      }),
-      fetch(`https://api.github.com/users/${username}/repos`, {
-        headers: {
-          Authorization: `token ${API_TOKEN}`,
-        },
-      }),
+      fetch(
+        `https://api.github.com/users/${username}?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`
+      ),
+      fetch(
+        `https://api.github.com/users/${username}/repos?sort=created:ascclient_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`
+      ),
     ]);
 
     if (!responseProfileData.ok) throw new Error(responseProfileData.status);

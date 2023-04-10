@@ -26,15 +26,14 @@ Projeto **Github Finder**, que permite buscar dados de qualquer perfil do github
 
 ### ⏹️ Demonstração
 
-<div align="center">
-    <img width="750" alt="GIF demontrando o Github finder" src="./src/.github/github-finder.gif" />
-</div>
+![Github Finder - Google Chrome 10_04_2023 11_10_49](https://user-images.githubusercontent.com/93893533/230918912-5aa2d855-d017-47bd-b1e2-119138cd2773.png)
+
 
 ---
 
 ## ✨ Funcionalidades
 
-- [x] Exibição de dados do github, sendo nome de usuários, seguidores, local de trabalho, endereço, bem como repositórios
+- [x] Exibição de dados do github, sendo nome de usuário, seguidores, local de trabalho, endereço, bem como repositórios
 - [x] Paginação dos reposítórios
 - [x] Ordenação dos reposítórios com base no número de stars
 - [x] Validação de perfil válido

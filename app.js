@@ -148,6 +148,7 @@ const searchUser = async (username) => {
     displayProfileData(profileData);
     displayReposData(1, orderedRepos);
     searchInput.value = "";
+    searchInput.focus();
   } catch (error) {
     console.log(error.message);
     if (error.message === "404") {

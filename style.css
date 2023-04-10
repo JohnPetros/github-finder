@@ -63,6 +63,9 @@ main {
   font-size: 3.2rem;
   margin-bottom: 1rem;
   margin-left: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .profile .username h3 {
@@ -207,6 +210,9 @@ button:active {
 
 .repo header h4 {
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .repo footer {

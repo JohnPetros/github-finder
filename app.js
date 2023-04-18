@@ -74,9 +74,9 @@ const displayProfileData = ({
 }) => {
   userName.textContent = login;
   userAvatar.src = avatar_url;
-  userFollowers.textContent = followers;
-  userFollowing.textContent = following;
-  userPublicRepos.textContent = public_repos;
+  userFollowers.textContent = followers + " seguidores";
+  userFollowing.textContent = following + " seguindo";
+  userPublicRepos.textContent = public_repos + " repositórios";
   userCompany.textContent = company ?? "Não informado";
   userLocation.textContent = location ?? "Não informado";
   userProfileLink.classList.remove("hide");
@@ -153,6 +153,8 @@ const searchUser = async (username) => {
     console.log(error.message);
     if (error.message === "404") {
       displayNotFoundError();
+    } else {
+      removeNotFoundError();
     }
   } finally {
     removeLoaders();

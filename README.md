@@ -86,7 +86,7 @@ O deploy desse projeto foi realizado através do **[Github Pages](https://pages.
 
 ## 🎨 Layout:
 
-No link abaixo você encontra o layout do desafio original feito pela equipe da Rocketseat, o qual eu me baseei para fazer o meu. Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
+No link abaixo você encontra o layout do desafio original feito pela equipe da Rocketseat, o qual eu me baseei para fazer o meu. Lembrando que você precisa ter uma conta no **[Figma](http://figma.com/)** para acessá-lo.
 
 - [Layout](https://www.figma.com/file/B3jnuAiZbqzgaXd5CQHvhp/DD-%2F-Rocketcard-(Copy)?node-id=3-2&t=QzL0a87OEoRjlUy4-0)
 

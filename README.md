@@ -57,7 +57,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Pré-requesitos
 
-Embora não seja obrigatório, para rodar a aplicação de uma forma mais prática, é bom ter o editor de código [VSCode](https://code.visualstudio.com/) junto com a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), que pode ser instalada no marketplace do próprio VSCode.
+Embora não seja obrigatório, para rodar a aplicação de uma forma mais prática, é bom ter o editor de código **[VSCode](https://code.visualstudio.com/)** junto com a extensão **[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)**, que pode ser instalada no marketplace do próprio VSCode.
 
 #### 📟 Rodando a aplicação
 

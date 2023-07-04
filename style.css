@@ -178,7 +178,7 @@ button:active {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
-  height: 31rem;
+  height: 30rem;
   position: relative;
 }
 
@@ -267,7 +267,6 @@ button:active {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  /* background-color: yellow; */
 }
 
 .pagination {

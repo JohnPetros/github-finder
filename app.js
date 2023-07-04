@@ -17,8 +17,16 @@ const CLIENT_SECRET = "70790f0f99edc910a3b36767dbc9d18ccbd0e4de";
 const displayReposData = (pageNumber, repos) => {
   reposContainer.innerHTML = "";
   pagination.innerHTML = "";
+
+  if (repos.length === 0) {
+    reposContainer.innerHTML =
+      '<p class="repos-not-found">Nenhum repositório encontrado</p>';
+    return;
+  }
+
   const pagesAmount = Math.ceil(repos.length / 6);
   const start = (pageNumber - 1) * 6;
+
   repos
     .slice(start, start + 6)
     .forEach(({ name, language, html_url, forks_count, stargazers_count }) => {
@@ -120,7 +128,7 @@ const removeLoaders = () => {
 
 const activeLoading = () => {
   const loader =
-    '<img id="loader" class="loader" width="75" height="75" src="https://manifestoglauber.com.br/frontend/assets/images/loader.gif" />';
+    '<img id="loader" class="loader" width="75" height="75" src="https://www.purplerosetheatre.org/wp-content/themes/dt-the7-child-2020/images/loader.gif" />';
   reposContainer.innerHTML = loader;
 };
 

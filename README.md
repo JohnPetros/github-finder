@@ -72,7 +72,8 @@ $ cd github-finder
 # Abra a pasta no VSCode
 $ code .
 
-# Execute o arquivo index com a extensão Live Server, clicando com o botão direito sobre ele e depois em Open with Live Server
+# Execute o arquivo index com a extensão Live Server,
+# clicando com o botão direito sobre ele e depois em Open with Live Server
 
 ```
 

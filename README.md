@@ -63,7 +63,7 @@ Embora não seja obrigatório, para rodar a aplicação de uma forma mais práti
 
 ```bash
 
-# Clone este repositório no terminal/cmd
+# Clone este repositório no terminal
 $ git clone https://github.com/JohnPetros/github-finder.git
 
 # Acesse a pasta do projeto
